@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+
+.myproducts {
+    width: 100vw;
+    height: 80vw;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    z-index: 0;
+}
+
+.myproduct-h1 {
+  position: absolute;
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: 900;
+  padding-top: 100px;
+  padding-left: 118px;
+}
+
+.my-image {
+  position: absolute;
+  top: 235px;
+  left: 100px;
+  width: 60px;
+  height: 60px;
+}
+
+.index .right-section {
+  display: flex;
+  align-items: center;
+}
+
+.index .right-section .links .button {
+  display: flex;
+  align-items: center;
+  margin-right: 250px;
+}
+
+  .product-list {
+    margin-top: -120px;
+    position: absolute;
+    top: 320px;
+    left: 102px;
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping to the next line if needed */
+    justify-content: center; /* Center align items horizontally */
+    gap: 0px; /* Space between cards */
+    flex-wrap: wrap; /* ให้การ์ดห่อไปที่บรรทัดถัดไปเมื่อเต็ม */
+    justify-content: flex-start; 
+
+  }
+  
+  .card-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap; /* Prevent cards from wrapping to the next line */
+    overflow-x: auto; /* Allows horizontal scrolling if there are too many cards */
+
+  }
+  
+
+  .pagination-container {
+    display: flex;
+    justify-content: center; /* จัดกลางแนวนอน */
+    margin-top: 1000px; /* ระยะห่างจากด้านบน */
+  }
+  
+
+  .product-list .ant-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .product-list .ant-card-meta {
+    margin-top: auto;
+  }
+  
+  .product-list .ant-card-meta-title {
+    font-weight: bold;
+  }

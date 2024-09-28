@@ -1,0 +1,418 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+
+
+.navbarseller {
+  width: 98%;
+  height: 150px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: center;
+  cursor: pointer;
+}
+
+
+.navbarseller .right-section {
+  display: flex;
+  align-items: center;
+}
+
+
+.navbarseller .right-section .links .button {
+  display: flex;
+  align-items: center;
+
+}
+
+
+.linksseller {
+  display: flex;
+  align-items: center;
+  margin-left: 20px; 
+}
+
+
+.linksseller a {
+  text-decoration: none;
+  color: white;
+  margin-left: 20px;
+  font-size: 25px;
+}
+
+.search {
+  margin-right: 120px; 
+  display: flex;
+  align-items: center;
+  border-radius: 25px;
+}
+
+.search input {
+  border-radius: 60px;
+  border: 3.5px solid #ccc; 
+  padding: 20px; 
+  margin-top: "";
+  width: 600px;
+  height: 0px;
+
+
+}
+
+.search input::placeholder {
+  color: #aaa; 
+}
+
+.button-createproductseller {
+  font-size: 16px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 25px;
+  color: rgb(52, 52, 52);
+  border: 3px solid rgb(52, 52, 52); 
+  width: 160px;
+  height: 45px;
+  margin-right: 60px; 
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+}
+
+
+.button-createproductseller:hover{
+    background-color: rgb(47, 42, 42);
+    color: rgb(255, 255, 255);
+}
+
+
+.box-navbarseller {
+  margin: center;
+  display: flex;
+  align-items: center;
+  gap: 30px; 
+}
+.box-navbarseller :hover{
+  border-radius: 3px;
+  mix-blend-mode:multiply;
+  filter:drop-shadow(0px 0px 12px rgb(246, 94, 6));
+  opacity: 3.5;
+}
+
+.box-navbarseller img {
+  height: 35px; 
+
+}
+
+.imgboxseller {
+  display: flex;
+  margin-left: 60px;
+  gap: 35px;
+}
+.imgboxseller :hover{
+  border-radius: 3px;
+  mix-blend-mode:multiply;
+  filter:drop-shadow(0px 0px 12px rgb(246, 94, 6));
+  opacity: 3.5;
+}
+
+.imgboxseller img {
+  height: 35px; 
+
+} */
+
+
+
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+
+}
+
+body{
+  background: #fff;
+}
+
+
+/* เพิ่มใหม่ */
+.titleseller {
+  display: flex;
+  align-items: center;
+}
+/* เพิ่มใหม่ */
+.navsellerlogo {
+  width: 100px;
+  margin-right: -10px;
+  margin-left: -33px;
+  margin-top: 7px;
+}
+
+
+
+
+.wrapperseller .headerseller{
+  z-index: 1;
+  background: #22242A;
+  position: fixed;
+  width: calc(100%);
+  height: 70px;
+  display: flex;
+  top: 0;
+}
+
+.wrapperseller .headerseller .header-menuseller{
+  width: calc(100%);
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.wrapperseller .headerseller .header-menuseller .titleseller{
+  color: #fff;
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.wrapperseller .headerseller .header-menuseller .titleseller h2{
+  color: #ff5733;
+  font-size: 25px;
+  margin-left: 10px;
+}
+
+.wrapperseller .headerseller .header-menuseller .sidebar-btnseller{
+  color: #fff;
+  position: absolute;
+  margin-left: 310px;
+  font-size: 26px;
+  font-weight: 900;
+  cursor: pointer;
+  transition: 0.3s;
+  transition-property: color;
+}
+
+.wrapperseller .headerseller .header-menuseller .sidebar-btnseller :hover{
+  color:#ff5733;
+
+}
+
+.wrapperseller .headerseller .header-menuseller ul{
+  display: flex;
+}
+
+.wrapperseller .headerseller .header-menuseller ul li a{
+  background: #fff;
+  color: #000;
+  display: block;
+  margin: 0 10px;
+  font-size: 18px;
+  width: 34px;
+  height: 34px;
+  line-height: 35px;
+  text-align: center;
+  border-radius: 50%;
+  transition: 0.3s;
+  transition-property: background, color;
+}
+
+.wrapperseller .headerseller .header-menuseller ul li a:hover{
+  background: #ff5733;
+  color: #fff;
+}
+
+.wrapperseller .siderbarseller{
+  z-index: 1;
+  background: #2e2f33;
+  position: fixed;
+  top: 70px;
+  width: 290px;
+  height: calc(100%);
+  transition: 0.3s;
+  transition-property: width;
+  overflow: auto;
+}
+/* แก้ตรงนี้ */
+.wrapperseller .siderbarseller .sidebar-menuseller{
+  margin-top: -70px; /* แก้ตรงนี้ */
+  overflow: hidden;
+}
+
+.wrapperseller .siderbarseller .sidebar-menuseller .profileseller img {
+  margin: 20px;
+  width: 120px;/* แก้ตรงนี้ */
+  height: 120px;/* แก้ตรงนี้ */
+  border-radius: 70px;
+  margin-bottom: -55px;  /* แก้ตรงนี้ */
+}
+
+.wrapperseller .siderbarseller .sidebar-menuseller .username {
+
+  color: #bbb;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  margin-bottom: 50px; /* แก้ตรงนี้ */
+  cursor: pointer;
+}
+
+.wrapperseller .siderbarseller .sidebar-menuseller .itemseller{
+  width: 290px;
+  overflow: hidden;
+
+}
+.wrapperseller .siderbarseller .sidebar-menuseller .itemseller .menu-btnseller{
+  display: block;
+  color: #fff;
+  position: relative;
+  padding: 25px 20px;
+  transition: 0.3s;
+  transition-property: color;
+}
+
+.wrapperseller .siderbarseller .sidebar-menuseller .itemseller .menu-btnseller:hover{
+  color: #ff5733;
+}
+.wrapperseller .siderbarseller .sidebar-menuseller .itemseller .menu-btnseller i{
+  margin-right: 20px;
+}
+
+.wrapperseller .siderbarseller .sidebar-menuseller .itemseller .menu-btnseller .drop-downseller{
+  float: right;
+  font-size: 12px;
+  margin-top: 3px;
+}
+
+.wrapperseller .siderbarseller .sidebar-menuseller .itemseller .sub-menuseller{
+  background: #FF5733;
+  overflow: hidden;
+  max-height: 0;
+  transition: 0.3s;
+  transition-property: background, max-height;
+}
+
+.wrapperseller .siderbarseller .sidebar-menuseller .itemseller .sub-menuseller a{
+  display: block;
+  position: relative;
+  color: #fff;
+  white-space: nowrap;
+  font-size: 15px;
+  padding: 20px;
+  border-bottom: 1px solid #ffd2c9;
+  transition: 0.3s;
+  transition-property: background;
+}
+
+.wrapperseller .siderbarseller .sidebar-menuseller .itemseller .sub-menuseller a:hover{
+  background: #fd6645;
+}
+
+.wrapperseller .siderbarseller .sidebar-menuseller .itemseller .sub-menuseller i{
+  padding-right: 20px;
+  font-size: 10px;
+}
+
+.wrapperseller .siderbarseller .sidebar-menuseller .itemseller:target .sub-menuseller{
+  max-height: 500px;
+}
+
+.wrapperseller .main-containerseller{
+  width: (100% - 290px);
+  margin-top: 70px;
+  margin-left: 290px;
+  padding: 15px;
+  transition: margin-left 0.3s ease; /* Smooth transition */
+
+}
+
+.wrapperseller.collapseseller .siderbarseller {
+  width: 70px /* Slide the sidebar off-screen when collapsed */
+}
+
+/* Adjust main content when sidebar is collapsed */
+.wrapperseller.collapseseller .main-containerseller {
+  width: (100%-70px);
+  margin-left: 70px;
+  transition: margin-left 0.3s ease;
+}
+
+.wrapperseller.collapseseller .siderbarseller .profileseller img,
+.wrapperseller.collapseseller .siderbarseller .username,
+.wrapperseller.collapseseller .siderbarseller a span{
+  display: none;
+}
+
+.wrapperseller.collapseseller .siderbarseller .sidebar-menuseller .itemseller .menu-btnseller{
+  font-size: 23px;
+}
+
+.wrapperseller.collapseseller .siderbarseller .sidebar-menuseller .itemseller .sub-menuseller i{
+  font-size: 18px;
+  padding: 3px;
+}
+
+
+.wrapperseller.collapseseller .main-containerseller{
+  width: (100%-70px);
+  margin-left: 70px;
+}
+
+
+.button-createproductseller {
+  justify-content:space-around;
+  margin-left: 10px;
+  font-size: 16px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 25px;
+  color: #2e2f33;
+  border: 3px solid #2e2f33; 
+  width: 160px;
+  height: 40px;
+  margin-right: 20px; 
+  margin-top: -3px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+}
+
+.button-createproductseller:hover{
+    background-color: #FF5733;
+    color: rgb(255, 255, 255);
+}
+
+
+
+.navbar-searchseller {
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+
+}
+
+.navbar-searchseller input {
+  border-radius: 60px;
+  border: 3.5px solid #ccc;
+  padding: 15px; 
+  margin-right: -45px;
+  margin-top: -1px;
+  width: 600px;
+  height: 0px;
+}
+
+.searchseller input::placeholder {
+  color: #aaa; 
+}
+
+.sub-menumem{
+  cursor: pointer;
+}
+
+

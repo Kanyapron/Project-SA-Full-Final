@@ -1,0 +1,226 @@
+body {
+    margin: 0;
+    margin-top: 70px;
+    margin-right: -32px;
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    height: 90%;
+    width: 90%;
+  }
+  
+  .container {
+    display: flex;
+    height: 93vh;
+    width: 100vw;
+  }
+  
+  .sidebar {
+    width: 300px;
+    background-color: #e4e6eb;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  .sidebar input {
+    width: 90%;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    margin-bottom: 10px;
+  }
+  
+  .sidebar .contact {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    cursor: pointer;
+  }
+  
+  .sidebar .contact:hover {
+    background-color: #d8dadf;
+  }
+  
+  .sidebar .contact img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .sidebar .contact .status {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: green;
+    margin-left: auto;
+  }
+  
+  .sidebar .contact .status.offline {
+    background-color: gray;
+  }
+  
+  .chat {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+  }
+  
+  .chat-header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .chat-header img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .chat-header .icons {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+  }
+  
+  .chat-header .icons i {
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
+  .chat-body {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column; /* ทำให้ข้อความเรียงจากบนลงล่าง */
+}
+  .chat-body .message {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .chat-body .message img {
+    width: 200px;
+    border-radius: 10px;
+  }
+  
+  .chat-body .message .text {
+    margin-left: 10px;
+    padding: 10px;
+    background-color: #f0f2f5;
+    border-radius: 10px;
+  }
+  
+  .chat-footer {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    
+  }
+  .chat-footer input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    margin-right: 10px;
+    font-size: 20px;
+    background-color: #f1f1f1;
+  }
+  
+  .chat-footer i {
+    cursor: pointer;
+  }
+  
+  .right-sidebar {
+    width: 300px;
+    background-color: #fff;
+    padding: 10px;
+    box-sizing: border-box;
+    border-left: 1px solid #ddd;
+  }
+  
+  .right-sidebar .profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .right-sidebar .profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .right-sidebar .options div,
+  .right-sidebar .block-options div {
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 5px;
+  }
+  
+  .right-sidebar .options div:hover,
+  .right-sidebar .block-options div:hover {
+    background-color: #f0f2f5;
+  }
+  
+/* ข้อความจากผู้ใช้ปัจจุบัน (ด้านขวา) */
+.message.current-user {
+    display: flex;
+    justify-content: flex-end; /* ใช้เพื่อจัดให้ข้อความอยู่ด้านขวา */
+    margin-bottom: 10px;
+  }
+  
+  .message.current-user .text {
+    background-color: #dcf8c6;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 70%;
+  }
+  
+  /* ข้อความจากผู้ใช้อื่น (ด้านซ้าย) */
+  .message.other-user {
+    display: flex;
+    justify-content: flex-start; /* ใช้เพื่อจัดให้ข้อความอยู่ด้านซ้าย */
+    margin-bottom: 10px;
+  }
+  
+  .message.other-user .text {
+    background-color: #f1f1f1;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 70%;
+  }
+
+  .message img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 5px;
+  }
+  
+  .chat-header div {
+    margin-left: 10px; /* เว้นระยะห่างระหว่างรูปโปรไฟล์กับชื่อ */
+  }
+
+  .contact div {
+    margin-left: 10px; /* เว้นระยะห่างระหว่างรูปโปรไฟล์กับชื่อ */
+  }
+
+  .home-icon{
+    position: absolute;
+    top: 20px;
+    left: 1400px;
+    font-size: 35px;
+  }

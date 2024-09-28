@@ -1,0 +1,201 @@
+.home-main-page{
+  width: 100vw;
+  /* height: 150vw; */
+  background-color: rgb(255, 255, 255);
+}
+
+.banner-section img {
+  width: 1000px;
+  height: 400px;
+  border-radius: 25px;
+  margin-left: 30px;
+  margin-top: 20px;
+}
+
+.category-section {
+  display: flex;
+  justify-content: center;
+  background-color: #EBD96B;
+  width: auto;
+  height: 100px;
+  margin-top: 20px;
+}
+
+.category-section img {
+  margin-left: 90px;
+  margin-top: 15px;
+  width: 70px;
+  height: 70px;
+}
+
+.new-items-header {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 26px;
+  margin-top: 20px;
+  margin-left: 100px;
+  font-weight: bold;
+  
+}
+
+.item-list {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  place-items: center;
+}
+
+.item-container img {
+  width: 250px;
+  height: 350px;
+  border-radius: 25px;
+  margin-bottom: 20px;
+}
+
+.item-details {
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  margin-bottom: 20px;
+}
+
+.title-item {
+  font-size: 18px;
+  color: #003459;
+}
+
+.price-label {
+  margin-bottom: 40px;
+}
+
+.item-container:hover {
+  transition: 0.3s ease-in;
+  cursor: pointer;
+}
+
+.navbar {
+  width: 98%;
+  height: 120px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.navbar .right-section {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .right-section .links .nav-button {
+  display: flex;
+  align-items: center;
+  margin-right: 250px;
+}
+
+.logo {
+  width: 240px;
+  margin-top: 12px;
+}
+
+.profile-icon {
+  width: 90px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  margin-left: 20px; 
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  margin-left: 20px;
+  font-size: 25px;
+}
+
+.search-input {
+  padding-left: 30px;
+  margin-right: 300px;
+  width: 400px;
+  height: 30px;
+  border-radius: 25px;
+  background-image: url('../../icons/search-286.png'); 
+  background-repeat: no-repeat;
+  background-position: 5px center; 
+  background-size: 20px; 
+}
+
+.search-input::placeholder {
+  color: #aaa;
+}
+
+.login-button {
+  background-color: white;
+  border-radius: 25px;
+  color: black;
+  width: 90px;
+  height: 40px;
+  margin-right: 20px;
+  font-weight: bold;
+}
+
+.signup-button {
+  background-color: white;
+  border-radius: 25px;
+  color: black;
+  width: 90px;
+  height: 40px;
+  font-weight: bold;
+}
+
+.login-button:hover {
+  background-color: rgb(42, 142, 242);
+  color: white;
+}
+
+.signup-button:hover {
+  background-color: rgb(42, 142, 242);
+  color: white;
+}
+
+.products {
+  position: absolute;
+  left: 40px;
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr ;
+  place-items: center;
+  margin-left: 65px;
+}
+
+
+.product .description .name-pro{
+  font-size: 18px;
+  color: #003459;
+}
+
+.product .description .money-color{
+  margin-bottom: 40px;
+}
+
+/*ส่วนเสริม*/
+.product:hover {
+  transition: 0.3s ease-in;
+  cursor: pointer;
+}
+
+.category-icon {
+  cursor: pointer;
+}
+
+
+.category-icon {
+  transition: transform 0.5s ease; /* กำหนดการเปลี่ยนแปลงที่จะเกิดขึ้นนุ่มนวล */
+}
+
+.category-icon:hover {
+  transform: translateY(-10px); /* ทำให้ไอคอนเด้งขึ้น */
+}

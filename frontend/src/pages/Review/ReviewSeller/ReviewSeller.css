@@ -1,0 +1,22 @@
+
+  .ant-table-thead > tr > th {
+    background-color: #cfd1d2 !important; /* สีฟ้าอ่อน */
+    color: #000; /* สีของข้อความในหัวตาราง */
+    text-align: center; /* จัดข้อความให้อยู่ตรงกลาง */
+  }
+  
+
+  .custom-modal {
+    border-radius: 10px; /* ทำให้กรอบมีความโค้ง */
+  }
+  
+  .custom-button {
+    background-color: #ff8c00; /* เปลี่ยนสีพื้นหลัง */
+    border-color: #ff8c00; /* เปลี่ยนสีกรอบ */
+    color: white; /* เปลี่ยนสีข้อความ */
+  }
+
+  .custom-modalsellrate .ant-modal-body {
+    max-height: 400px; /* ปรับความสูงตามต้องการ */
+    overflow-y: auto;  /* ทำให้สามารถเลื่อนในแนวตั้งได้ */
+  }

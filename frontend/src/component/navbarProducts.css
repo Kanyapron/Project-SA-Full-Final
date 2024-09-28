@@ -1,0 +1,291 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+  
+  }
+  
+  body{
+    background: #fff;
+  }
+  
+  
+  /* เพิ่มใหม่ */
+  .titleproducts {
+    display: flex;
+    align-items: center;
+  }
+  /* เพิ่มใหม่ */
+  .navproductslogo {
+    width: 100px;
+    margin-right: -10px;
+    margin-left: -33px;
+    margin-top: 7px;
+  }
+  
+  
+  
+  
+  .wrapperproducts .headerproducts{
+    z-index: 1;
+    background: #22242A;
+    position: fixed;
+    width: calc(100%);
+    height: 70px;
+    display: flex;
+    top: 0;
+  }
+  
+  .wrapperproducts .headerproducts .header-menuproducts{
+    width: calc(100%);
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+  
+  .wrapperproducts .headerproducts .header-menuproducts .titleproducts{
+    color: #fff;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 900;
+  }
+  
+  .wrapperproducts .headerproducts .header-menuproducts .titleproducts .text-sut{
+    color: #ff5733;
+    font-size: 25px;
+    margin-left: 10px;
+    
+  }
+  
+  .wrapperproducts .headerproducts .header-menuproducts .sidebar-btnproducts{
+    color: #fff;
+    position: absolute;
+    margin-left: 310px;
+    font-size: 26px;
+    font-weight: 900;
+    cursor: pointer;
+    transition: 0.3s;
+    transition-property: color;
+  }
+  
+  .wrapperproducts .headerproducts .header-menuproducts .sidebar-btnproducts :hover{
+    color:#ff5733;
+  
+  }
+  
+  .wrapperproducts .headerproducts .header-menuproducts ul{
+    display: flex;
+  }
+  
+  .wrapperproducts .headerproducts .header-menuproducts ul li a{
+    background: #fff;
+    color: #000;
+    display: block;
+    margin: 0 10px;
+    font-size: 18px;
+    width: 34px;
+    height: 34px;
+    line-height: 35px;
+    text-align: center;
+    border-radius: 50%;
+    transition: 0.3s;
+    transition-property: background, color;
+  }
+  
+  .wrapperproducts .headerproducts .header-menuproducts ul li a:hover{
+    background: #ff5733;
+    color: #fff;
+  }
+  
+  .wrapperproducts .siderbarproducts{
+    z-index: 1;
+    background: #2e2f33;
+    position: fixed;
+    top: 70px;
+    width: 290px;
+    height: calc(100%);
+    transition: 0.3s;
+    transition-property: width;
+    overflow: auto;
+  }
+  
+/* แก้ตรงนี้ */
+.wrapperproducts .siderbarproducts .sidebar-menuproducts{
+    margin-top: -70px; /* แก้ตรงนี้ */
+    overflow: hidden;
+  }
+  
+  .wrapperproducts .siderbarproducts .sidebar-menuproducts .profileproducts img {
+    margin: 20px;
+    width: 120px;/* แก้ตรงนี้ */
+    height: 120px;/* แก้ตรงนี้ */
+    border-radius: 70px;
+    margin-bottom: -55px;  /* แก้ตรงนี้ */
+  }
+  
+  .wrapperproducts .siderbarproducts .sidebar-menuproducts .username {
+    color: #bbb;
+    cursor: pointer;
+    font-weight: 700;
+    margin-bottom: 50px; /* แก้ตรงนี้ */
+  }
+  
+  .wrapperproducts .siderbarproducts .sidebar-menuproducts .itemproducts{
+    width: 290px;
+    overflow: hidden;
+  
+  }
+  .wrapperproducts .siderbarproducts .sidebar-menuproducts .itemproducts .menu-btnproducts{
+    display: block;
+    color: #fff;
+    position: relative;
+    padding: 25px 20px;
+    transition: 0.3s;
+    transition-property: color;
+  }
+  
+  .wrapperproducts .siderbarproducts .sidebar-menuproducts .itemproducts .menu-btnproducts:hover{
+    color: #ff5733;
+  }
+  .wrapperproducts .siderbarproducts .sidebar-menuproducts .itemproducts .menu-btnproducts i{
+    margin-right: 20px;
+  }
+  
+  .wrapperproducts .siderbarproducts .sidebar-menuproducts .itemproducts .menu-btnproducts .drop-downproducts{
+    float: right;
+    font-size: 12px;
+    margin-top: 3px;
+  }
+  
+  .wrapperproducts .siderbarproducts .sidebar-menuproducts .itemproducts .sub-menuproducts{
+    background: #FF5733;
+    overflow: hidden;
+    max-height: 0;
+    transition: 0.3s;
+    transition-property: background, max-height;
+  }
+  
+  .wrapperproducts .siderbarproducts .sidebar-menuproducts .itemproducts .sub-menuproducts a{
+    display: block;
+    position: relative;
+    color: #fff;
+    white-space: nowrap;
+    font-size: 15px;
+    padding: 20px;
+    border-bottom: 1px solid #ffd2c9;
+    transition: 0.3s;
+    transition-property: background;
+  }
+  
+  .wrapperproducts .siderbarproducts .sidebar-menuproducts .itemproducts .sub-menuproducts a:hover{
+    background: #fd6645;
+  }
+  
+  .wrapperproducts .siderbarproducts .sidebar-menuproducts .itemproducts .sub-menuproducts i{
+    padding-right: 20px;
+    font-size: 10px;
+  }
+  
+  .wrapperproducts .siderbarproducts .sidebar-menuproducts .itemproducts:target .sub-menuproducts{
+    max-height: 500px;
+  }
+  
+  .wrapperproducts .main-containerproducts{
+    width: (100% - 290px);
+    margin-top: 70px;
+    margin-left: 290px;
+    padding: 15px;
+    transition: margin-left 0.3s ease; /* Smooth transition */
+  
+  }
+  
+  .wrapperproducts.collapseproducts .siderbarproducts {
+    width: 70px /* Slide the sidebar off-screen when collapsed */
+  }
+  
+  /* Adjust main content when sidebar is collapsed */
+  .wrapperproducts.collapseproducts .main-containerproducts {
+    width: (100%-70px);
+    margin-left: 70px;
+    transition: margin-left 0.3s ease;
+  }
+  
+  .wrapperproducts.collapseproducts .siderbarproducts .profileproducts img,
+  .wrapperproducts.collapseproducts .siderbarproducts .username,
+  .wrapperproducts.collapseproducts .siderbarproducts a span{
+    display: none;
+  }
+  
+  .wrapperproducts.collapseproducts .siderbarproducts .sidebar-menuproducts .itemproducts .menu-btnproducts{
+    font-size: 23px;
+  }
+  
+  .wrapperproducts.collapseproducts .siderbarproducts .sidebar-menuproducts .itemproducts .sub-menuproducts i{
+    font-size: 18px;
+    padding: 3px;
+  }
+  
+  
+  .wrapperproducts.collapseproducts .main-containerproducts{
+    width: (100%-70px);
+    margin-left: 70px;
+  }
+  
+  
+  .button-createproductproducts {
+    justify-content:space-around;
+    margin-left: 10px;
+    font-size: 16px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 25px;
+    color: #2e2f33;
+    border: 3px solid #2e2f33; 
+    width: 160px;
+    height: 40px;
+    margin-right: 20px; 
+    margin-top: -3px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  
+  }
+  
+  .button-createproductproducts:hover{
+      background-color: #FF5733;
+      color: rgb(255, 255, 255);
+  }
+  
+  
+  
+  .navbar-searchproducts {
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+  
+  }
+  
+  .navbar-searchproducts input {
+    border-radius: 60px;
+    border: 3.5px solid #ccc;
+    padding: 15px; 
+    margin-right: -45px;
+    margin-top: -1px;
+    width: 600px;
+    height: 0px;
+  }
+  
+  .searchproducts input::placeholder {
+    color: #aaa; 
+  }
+
+  .sub-menumem{
+  	cursor: pointer;
+	}
+
+  
+  

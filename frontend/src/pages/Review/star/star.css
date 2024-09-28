@@ -1,0 +1,11 @@
+.star-rating {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 16px;
+  }
+  
+  .star {
+    cursor: pointer;
+    margin-right: 8px;
+  }
+  

@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+
+.card {
+    width: auto;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    z-index: 0;
+}
+
+.card h1 {
+  position: absolute;
+  color: rgb(0, 0, 0);
+  font-size: 30px;
+  font-weight: Normal ;
+  padding-top: 70px;
+  padding-left: 118px;
+}
+
+
+
+.columns {
+  width: 80%; /* ตั้งความกว้างของตาราง */
+  margin-top: -130px; /* ทำให้มันอยู่กลาง */
+}
+
+

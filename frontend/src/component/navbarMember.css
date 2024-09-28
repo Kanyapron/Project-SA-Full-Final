@@ -1,0 +1,286 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+
+}
+
+body{
+  background: #fff;
+}
+
+
+/* เพิ่มใหม่ */
+.titlemem {
+  display: flex;
+  align-items: center;
+}
+/* เพิ่มใหม่ */
+.navmemlogo {
+  width: 100px;
+  margin-right: -10px;
+  margin-left: -33px;
+  margin-top: 7px;
+}
+
+
+
+
+.wrappermem .headermem{
+  z-index: 1;
+  background: #22242A;
+  position: fixed;
+  width: calc(100%);
+  height: 70px;
+  display: flex;
+  top: 0;
+}
+
+.wrappermem .headermem .header-menumem{
+  width: calc(100%);
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.wrappermem .headermem .header-menumem .titlemem{
+  color: #fff;
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+
+
+.wrappermem .headermem .header-menumem .sidebar-btnmem{
+  color: #fff;
+  position: absolute;
+  margin-left: 310px;
+  font-size: 26px;
+  font-weight: 900;
+  cursor: pointer;
+  transition: 0.3s;
+  transition-property: color;
+}
+
+.wrappermem .headermem .header-menumem .sidebar-btnmem :hover{
+  color:#ff5733;
+
+}
+
+.wrappermem .headermem .header-menumem ul{
+  display: flex;
+}
+
+.wrappermem .headermem .header-menumem ul li a{
+  background: #fff;
+  color: #000;
+  display: block;
+  margin: 0 10px;
+  font-size: 18px;
+  width: 34px;
+  height: 34px;
+  line-height: 35px;
+  text-align: center;
+  border-radius: 50%;
+  transition: 0.3s;
+  transition-property: background, color;
+}
+
+.wrappermem .headermem .header-menumem ul li a:hover{
+  background: #ff5733;
+  color: #fff;
+}
+
+.wrappermem .siderbarmem{
+  z-index: 1;
+  background: #2e2f33;
+  position: fixed;
+  top: 70px;
+  width: 290px;
+  height: calc(100%);
+  transition: 0.3s;
+  transition-property: width;
+  overflow: auto;
+}
+/* แก้ตรงนี้ */
+.wrappermem .siderbarmem .sidebar-menumem{
+  margin-top: -70px; /* แก้ตรงนี้ */
+  overflow: hidden;
+}
+
+.wrappermem .siderbarmem .sidebar-menumem .profilemem img {
+  margin: 20px;
+  width: 120px;/* แก้ตรงนี้ */
+  height: 120px;/* แก้ตรงนี้ */
+  border-radius: 70px;
+  margin-bottom: -55px;  /* แก้ตรงนี้ */
+}
+
+.wrappermem .siderbarmem .sidebar-menumem .username {
+  color: #bbb;
+  cursor: pointer;
+  font-weight: 700;
+  margin-bottom: 50px; /* แก้ตรงนี้ */
+}
+
+.wrappermem .siderbarmem .sidebar-menumem .itemmem{
+  width: 290px;
+  overflow: hidden;
+
+}
+.wrappermem .siderbarmem .sidebar-menumem .itemmem .menu-btnmem{
+  display: block;
+  color: #fff;
+  position: relative;
+  padding: 25px 20px;
+  transition: 0.3s;
+  transition-property: color;
+}
+
+.wrappermem .siderbarmem .sidebar-menumem .itemmem .menu-btnmem:hover{
+  color: #ff5733;
+}
+.wrappermem .siderbarmem .sidebar-menumem .itemmem .menu-btnmem i{
+  margin-right: 20px;
+}
+
+.wrappermem .siderbarmem .sidebar-menumem .itemmem .menu-btnmem .drop-downmem{
+  float: right;
+  font-size: 12px;
+  margin-top: 3px;
+}
+
+.wrappermem .siderbarmem .sidebar-menumem .itemmem .sub-menumem{
+  background: #FF5733;
+  overflow: hidden;
+  max-height: 0;
+  transition: 0.3s;
+  transition-property: background, max-height;
+}
+
+.wrappermem .siderbarmem .sidebar-menumem .itemmem .sub-menumem a{
+  display: block;
+  position: relative;
+  color: #fff;
+  white-space: nowrap;
+  font-size: 15px;
+  padding: 20px;
+  border-bottom: 1px solid #ffd2c9;
+  transition: 0.3s;
+  transition-property: background;
+}
+
+.wrappermem .siderbarmem .sidebar-menumem .itemmem .sub-menumem a:hover{
+  background: #fd6645;
+}
+
+.wrappermem .siderbarmem .sidebar-menumem .itemmem .sub-menumem i{
+  padding-right: 20px;
+  font-size: 10px;
+}
+
+.wrappermem .siderbarmem .sidebar-menumem .itemmem:target .sub-menumem{
+  max-height: 500px;
+}
+
+.wrappermem .main-containermem{
+  width: (100% - 290px);
+  margin-top: 70px;
+  margin-left: 290px;
+  padding: 15px;
+  transition: margin-left 0.3s ease; /* Smooth transition */
+
+}
+
+.wrappermem.collapsemem .siderbarmem {
+  width: 70px /* Slide the sidebar off-screen when collapsed */
+}
+
+/* Adjust main content when sidebar is collapsed */
+.wrappermem.collapsemem .main-containermem {
+  width: (100%-70px);
+  margin-left: 70px;
+  transition: margin-left 0.3s ease;
+}
+
+.wrappermem.collapsemem .siderbarmem .profilemem img,
+.wrappermem.collapsemem .siderbarmem .username,
+.wrappermem.collapsemem .siderbarmem .username label,
+.wrappermem.collapsemem .siderbarmem a span{
+  display: none;
+}
+
+.wrappermem.collapsemem .siderbarmem .sidebar-menumem .itemmem .menu-btnmem{
+  font-size: 23px;
+}
+
+.wrappermem.collapsemem .siderbarmem .sidebar-menumem .itemmem .sub-menumem i{
+  font-size: 18px;
+  padding: 3px;
+}
+
+
+.wrappermem.collapsemem .main-containermem{
+  width: (100%-70px);
+  margin-left: 70px;
+}
+
+
+.button-createproductmember {
+  justify-content:space-around;
+  margin-left: 10px;
+  font-size: 16px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 25px;
+  color: #2e2f33;
+  border: 3px solid #2e2f33; 
+  width: 160px;
+  height: 40px;
+  margin-right: 20px; 
+  margin-top: -3px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+}
+
+.button-createproductmember:hover{
+    background-color: #FF5733;
+    color: rgb(255, 255, 255);
+}
+
+
+
+.navbar-searchmem {
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+
+}
+
+.navbar-searchmem input {
+  border-radius: 60px;
+  border: 3.5px solid #ccc;
+  padding: 15px; 
+  margin-right: -45px;
+  margin-top: -1px;
+  width: 600px;
+  height: 0px;
+}
+
+.searchmem input::placeholder {
+  color: #aaa; 
+}
+
+.sub-menumem{
+  cursor: pointer;
+}
+
+

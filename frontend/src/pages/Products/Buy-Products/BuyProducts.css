@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+
+.Buyproducts {
+    margin: 0;
+    margin-top: -70px;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.461);
+    display: flex;
+    justify-content: space-between;
+  }
+  .Buyproducts-h1 {
+    position: absolute;
+    color: rgba(0, 0, 0, 0.624);
+    font-size: 28px;
+    font-weight: Normal ;
+    padding-top: 200px;
+    padding-left: 577px;
+
+  }
+  .Buyproducts-h2 {
+    margin-left: -65px;
+    margin-top: 30px;
+    position: absolute;
+    color: #fb4343;
+    font-size: 35px;
+    font-weight: Normal ;
+    padding-top: 540px;
+    padding-left: 637px;
+  }
+  .Buyproducts-h3 {
+    position: absolute;
+    color: rgba(0, 0, 0, 0.624);
+    font-size: 28px;
+    font-weight: Normal ;
+    padding-top: 620px;
+    padding-left: 570px;
+  }
+  .rectangle {
+    margin-top: -50px;
+    position: absolute;
+    top: 330px;
+    left: 550px;
+    width: 400px;
+    height: 200px;
+    background-color: #d4d3d338;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 20px;
+  }
+
+  .rectangle h1 {
+    margin-top: 20px;
+    color: rgba(0, 0, 0, 0.624);
+    font-size: 20px;
+    font-weight: Normal ;
+    padding-top: 0px;
+    padding-left: 27px;
+
+  }
+
+.navbar .right-section {
+  display: flex;
+  align-items: center;
+}
+
+
+.navbar .right-section .links .button {
+  display: flex;
+  align-items: center;
+  margin-right: 250px;
+}
+
+
+  .frame-1 {
+    position: absolute;
+    top: 245px;
+    left: 80px;
+    width: 400px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Hide any overflow from the image */
+
+  }
+
+  .frame-1 img{
+    margin-top: -250px;
+    width: 500px;
+    height: 300px;
+    margin-left: 80px;
+
+
+  }
+  
+
+    
+  .arrow-icon {
+    position: absolute;
+    top: 430px;
+    left: 416px;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+  }
+  
+  .arrow-icon:hover {
+    opacity: 0.5;
+  }
+  
+  .arrow-icon1 {
+    position: absolute;
+    top: 430px;
+    left: 20px;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+  }
+  
+  .arrow-icon1:hover {
+    opacity: 0.5;
+  }
+
+
+  .quantity-control {
+
+    position: absolute;
+    top: 550px;
+    left: 723px;
+    background-color: #d0cece;
+    border-radius: 20px;
+    width: 55px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  
+  .quantity {
+    /* margin-top: -195px; */
+    font-size: 24px;
+    font-weight: bold;
+    color: #373737;
+  }
+  
+
+  .basket{
+    position: absolute;
+    top: 682px;
+    left: 565px;
+    background-color: #F3D745;
+    border-radius: 25px;
+    color: rgb(255, 255, 255);
+    width: 174px;
+    height: 46px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.basket:hover{
+    background-color: rgb(0, 0, 0);
+}
+
+
+.Buy-products{
+    position: absolute;
+    top: 622px;
+    left: 560px;
+    background-color: #FC8352;
+    border-radius: 25px;
+    color: rgb(255, 255, 255);
+    width: 160px;
+    height: 46px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.Buy-products:hover{
+    background-color: rgb(0, 0, 0);
+}
+.Chat{
+    position: absolute;
+    top: 622px;
+    left: 775px;
+    background-color: #3B873E;
+    border-radius: 25px;
+    color: rgb(255, 255, 255);
+    width: 174px;
+    height: 46px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.Chat:hover{
+    background-color: rgb(0, 0, 0);
+}
+
+
+.custom-modal {
+  position: fixed; /* ให้ modal อยู่บนสุด */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(8, 6, 6, 0.5); /* พื้นหลังโปร่งแสง */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2; /* ให้ modal อยู่ด้านบนสุดของหน้า */
+}
+
+.modal-content {
+  background-color: #ffffff; /* พื้นหลังของ modal */
+  padding: 20px; /* ขอบเขตของเนื้อหา */
+  border-radius: 10px; /* มุมโค้งมน */
+  height: 200px;
+  width: 400px; /* ความกว้างของ modal */
+  text-align: center; /* จัดตำแหน่งข้อความตรงกลาง */
+}
+
+.modal-actions {
+  margin-top: 80px; /* ระยะห่างจากเนื้อหา */
+}
+
+.modal-actions button {
+  margin: 0 35px; /* ระยะห่างระหว่างปุ่ม */
+}
+
+.modal-content p {
+  font-size: 30px;
+}
+
+.modal-actions button {
+  width: 110px; /* กำหนดความกว้างของปุ่ม */
+  height: 50px; /* กำหนดความสูงของปุ่ม */
+  font-size: 20px; /* ขนาดฟอนต์ของข้อความในปุ่ม */
+  border-radius: 10px; /* มุมโค้งมน */
+}
+
+.modal-actions .cancel-button {
+  background-color: #f44336; /* สีพื้นหลังของปุ่มยกเลิก */
+  color: #fff; /* สีข้อความของปุ่มยกเลิก */
+}
+
+.modal-actions .confirm-button {
+  background-color: #4caf50; /* สีพื้นหลังของปุ่มยืนยัน */
+  color: #fff; /* สีข้อความของปุ่มยืนยัน */
+}
+
+
+.list-container {
+  position: relative; /* ใช้สำหรับให้เมนูจัดตำแหน่งสัมพันธ์กับปุ่ม */
+  display: inline-block; /* แสดงปุ่มและเมนูในบรรทัดเดียวกัน */
+}
+
+.list-menu {
+  display: none; /* ซ่อนเมนูเริ่มต้น */
+  position: absolute; /* จัดตำแหน่งเมนูให้แสดงขึ้นตามปุ่ม */
+  background-color: white; /* พื้นหลังสีขาว */
+  border: 1px solid #ccc; /* เส้นขอบ */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* เงา */
+  z-index: 10; /* ให้เมนูอยู่ด้านบน */
+  padding: 10px;
+  width: 140px;
+  height: 100px;
+  border-radius: 20px;
+}
+
+.list-container:hover .list-menu {
+  display: block; /* แสดงเมนูเมื่อชี้เมาส์ */
+}
+
+
+.seller-container {
+  position: absolute;
+  top: 120px;
+  left: 1050px;
+  display: flex;
+  align-items: center; /* จัดให้อยู่กึ่งกลางในแนวตั้ง */
+}
+
+.buttonreview{
+  margin-top: 705px;
+  margin-right: 980px;
+}
+
+.seller-name {
+  margin-left: 10px; /* เพิ่มระยะห่างระหว่าง Avatar และชื่อ */
+  font-size: 20px;
+  font-weight: bold;
+}
+
+
+.custom-avatar {
+  width: 60px;  /* ปรับขนาดกว้าง */
+  height: 60px; /* ปรับขนาดสูง */
+  object-fit: cover; /* เพื่อให้ภาพแสดงในรูปแบบที่ดี */
+}
+
+.review-page-Bymember{
+  margin: 0;
+  margin-top: 210px;
+  margin-right: 80px;
+}
+
+
+
+.review-container {
+  max-height: 500px; /* กำหนดความสูงสูงสุด */
+  max-width: 500px;
+  overflow-y: auto; /* ทำให้สามารถเลื่อนดูได้ */
+  padding: 10px;
+  border: 1px solid #f0f0f0;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}

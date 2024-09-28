@@ -1,0 +1,39 @@
+.body {
+  width: 100vw;
+  height: 65vW;
+  background-color: #2e2f33;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-login{
+  background-color: #e2dfdf;
+  position: absolute;
+  top: 65px;
+  height: 500px;
+}
+
+.loginpage-button{
+  background-color: #ffa24c !important;
+  margin-right: 5vh;
+}
+
+.loginpage-button.ant-btn:hover{
+  background-color: #ff8c1a !important;
+  border-color: #ff8c1a !important;
+}
+
+.cancelloginpage-button{
+  background-color: #444 !important;
+}
+
+.cancelloginpage-button.ant-btn:hover{
+  background-color: #333 !important;
+  border-color: #333 !important;
+}
+
+.signup-now{
+  margin-top: 5vh;
+}
+

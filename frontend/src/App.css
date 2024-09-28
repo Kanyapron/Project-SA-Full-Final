@@ -1,0 +1,7 @@
+.ant-layout-sider {
+    z-index: 10; /* ให้ Sider อยู่บนสุด */
+  }
+  
+  .ant-layout-content {
+    z-index: 0; /* ทำให้เนื้อหาอยู่ด้านล่าง Sider */
+  }
