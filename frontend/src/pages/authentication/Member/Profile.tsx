@@ -48,14 +48,6 @@ function Profile() {
     GetMemberid(uid); // ดึงข้อมูลผู้ใช้เมื่อหน้าโหลด
   }, []);
 
-  const Logout = () => {
-    localStorage.clear();
-    messageApi.success("Logout successful");
-    setTimeout(() => {
-      location.href = "/";
-    }, 2000);
-  };
-
   const handleHome = async () => {
     if (uid === null) {
       messageApi.open({ type: "error", content: "ไม่พบ ID สมาชิก" });

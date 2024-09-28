@@ -10,7 +10,7 @@ function LoginPage() {
   const navigate = useNavigate();
   const [messageApi, contextHolder] = message.useMessage();
 
-  const onFinish = async (values: LoginInterface) => {
+  const onFinish = async (values: LoginInterface) => { //เป็นฟังก์ชันที่ถูกเรียกใช้เมื่อผู้ใช้กดปุ่ม"Log In"
     try {
       let res = await Login(values);
       console.log(res); // Log the response to inspect the data received from the API

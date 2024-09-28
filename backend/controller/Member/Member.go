@@ -59,30 +59,6 @@ func GetMember(c *gin.Context) { // ดึงข้อมูลสมาชิ�
 	c.JSON(http.StatusOK, member)
 }
 
-// GET /members
-func ListMembers(c *gin.Context) {
-	var members []entity.Member
-
-	db := config.DB()
-	result := db.Find(&members)
-	if result.Error != nil {
-		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to retrieve members"})
-		return
-	}
-	c.JSON(http.StatusOK, members)
-}
-
-// DELETE /members/:id
-func DeleteMember(c *gin.Context) { // ลบข้อมูลสมาชิกตาม ID
-	id := c.Param("id")
-	db := config.DB()
-	if tx := db.Delete(&entity.Member{}, id); tx.RowsAffected == 0 {
-		c.JSON(http.StatusBadRequest, gin.H{"error": "id not found"})
-		return
-	}
-	c.JSON(http.StatusOK, gin.H{"message": "Deleted successful"})
-}
-
 // PATCH /members/:id
 func UpdateMember(c *gin.Context) { // อัพเดทข้อมูลสมาชิกตาม ID
 	var member entity.Member

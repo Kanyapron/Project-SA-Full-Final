@@ -31,13 +31,15 @@ function SignUpPages() {
   const [messageApi, contextHolder] = message.useMessage();
 
   // เก็บไฟล์รูปโปรไฟล์ที่อัปโหลด
+  // fileList ใช้เก็บรายการไฟล์ที่ผู้ใช้อัปโหลด, setFileList ใช้ในการอัปเดตไฟล์ที่อัปโหลดเข้ามาใหม่เมื่อมีการเปลี่ยนแปลง
   const [fileList, setFileList] = useState<UploadFile[]>([]);
 
   // ฟังก์ชันการเปลี่ยนแปลงสำหรับการอัปโหลดรูปโปรไฟล์
+  //onChange: เป็นฟังก์ชันที่ใช้สำหรับอัปเดต fileList เมื่อผู้ใช้ทำการอัปโหลดไฟล์ใหม่
   const onChange: UploadProps["onChange"] = ({ fileList: newFileList }) => {
     setFileList(newFileList);
   };
-
+  //onPreview: เมื่อผู้ใช้ต้องการดูตัวอย่างรูปภาพที่อัปโหลด จะเปิดหน้าต่างใหม่และแสดงรูปภาพที่ถูกอัปโหลด
   const onPreview = async (file: UploadFile) => {
     let src = file.url as string;
     if (!src) {
@@ -58,7 +60,7 @@ function SignUpPages() {
     const file = fileList[0]?.originFileObj;
 
     if (file) {
-      const reader = new FileReader();
+      const reader = new FileReader(); //FileReader เพื่อแปลงไฟล์เป็น Base64 ซึ่งเป็นรูปแบบข้อมูลที่สามารถส่งผ่าน API
       reader.readAsDataURL(file);
       reader.onloadend = async () => {
         const base64data = reader.result as string;
