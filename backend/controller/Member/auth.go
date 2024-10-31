@@ -153,7 +153,7 @@ func SignIn(c *gin.Context) {
 
    if err != nil {
 
-       c.JSON(http.StatusBadRequest, gin.H{"error": "password is incerrect"})
+       c.JSON(http.StatusUnauthorized, gin.H{"error": "password is incerrect"})
 
        return
 

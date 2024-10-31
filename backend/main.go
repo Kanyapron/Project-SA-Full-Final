@@ -25,10 +25,8 @@ func main() {
 	{
 		//Member
 		router.GET("/member/:id", Member.GetMember)
-		router.GET("/member", Member.ListMembers)
 		router.POST("/member", Member.CreateMember)
 		router.PATCH("/member/:id", Member.UpdateMember)
-		router.DELETE("/member/:id", Member.DeleteMember)
 
 		//seller
 		router.GET("/seller/:id", controller.GetSeller)
